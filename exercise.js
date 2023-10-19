@@ -31,9 +31,19 @@ function isCharAVowel(char) {
 const sumArray = function(arr) {
     let sum = 0
     arr.forEach(element => {
-        sum = sum + element
+        sum += element
     });
     return sum
 }
 
-console.log(sumArray([2, 4, 5]));
+//console.log(sumArray([2, 4, 5]));
+
+function multiplyArray(arr) {
+    let product = 1
+    arr.forEach(element => {
+        product*=element
+    })
+    return product
+}
+
+console.log(multiplyArray([2, 4, 5]))
