@@ -64,5 +64,17 @@ function reverseString(str) {
     return str.split('').reverse().join('')
 }
 
-console.log(reverseString("rockstar"))
+//console.log(reverseString("rockstar"))
+
+const longestStringInArray = function(arrStrings) {
+    let longestString = 0
+    arrStrings.forEach(arr => {
+        if(arr.length >= longestString) {
+            longestString = arr.length
+        }
+    })
+    return longestString
+}
+
+console.log(longestStringInArray(['Quick red fox', 'jumps over', 'the lazy', 'dog']))
 
