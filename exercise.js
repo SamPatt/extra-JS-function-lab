@@ -56,4 +56,13 @@ const numArgs = function(parameter) {
     return arguments.length
 }
 
-console.log(numArgs(1,2,3,4,5))
+//console.log(numArgs(1,2,3,4,5))
+
+// Exercise 7
+
+function reverseString(str) {
+    return str.split('').reverse().join('')
+}
+
+console.log(reverseString("rockstar"))
+
