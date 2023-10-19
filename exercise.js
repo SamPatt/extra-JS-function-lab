@@ -1,6 +1,6 @@
 // Exercise 1 completed
 
-// Exercise 2 Define a function, as a function expression, maxOfThree that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
+// Exercise 2 
 
 const maxOfThree = function(num1, num2, num3) {
     let largest;
@@ -17,7 +17,7 @@ const maxOfThree = function(num1, num2, num3) {
 }
 //console.log(maxOfThree(1,2,3))
 
-// Exercise 3 Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
+// Exercise 3 
 
 function isCharAVowel(char) {
     char = char.toUpperCase()
@@ -26,7 +26,7 @@ function isCharAVowel(char) {
 
 //console.log(isCharAVowel('a'))
 
-// Exercise 4 Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]); would return 11
+// Exercise 4 
 
 const sumArray = function(arr) {
     let sum = 0
@@ -38,6 +38,8 @@ const sumArray = function(arr) {
 
 //console.log(sumArray([2, 4, 5]));
 
+// Exercise 5
+
 function multiplyArray(arr) {
     let product = 1
     arr.forEach(element => {
@@ -46,4 +48,12 @@ function multiplyArray(arr) {
     return product
 }
 
-console.log(multiplyArray([2, 4, 5]))
+//console.log(multiplyArray([2, 4, 5]))
+
+// Exercise 6
+
+const numArgs = function(parameter) {
+    return arguments.length
+}
+
+console.log(numArgs(1,2,3,4,5))
