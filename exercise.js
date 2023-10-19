@@ -70,7 +70,7 @@ function reverseString(str) {
 
 const longestStringInArray = function(arrStrings) {
     let longestString = 0
-    arrStrings.forEach(arr => {
+    arrStrings.forEach(function(arr)  {
         if(arr.length >= longestString) {
             longestString = arr.length
         }
@@ -92,4 +92,4 @@ function stringsLongerThan(arrStrings, num) {
     return longStringArr
 }
 
-console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
+//console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
