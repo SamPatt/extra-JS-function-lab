@@ -66,6 +66,8 @@ function reverseString(str) {
 
 //console.log(reverseString("rockstar"))
 
+// Exercise 8
+
 const longestStringInArray = function(arrStrings) {
     let longestString = 0
     arrStrings.forEach(arr => {
@@ -76,5 +78,18 @@ const longestStringInArray = function(arrStrings) {
     return longestString
 }
 
-console.log(longestStringInArray(['Quick red fox', 'jumps over', 'the lazy', 'dog']))
+//console.log(longestStringInArray(['Quick red fox', 'jumps over', 'the lazy', 'dog']))
 
+// Exercise 9
+
+function stringsLongerThan(arrStrings, num) {
+    let longStringArr = []
+    arrStrings.forEach(arr => {
+        if (arr.length > num) {
+            longStringArr.push(arr)
+        }
+    });
+    return longStringArr
+}
+
+console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
